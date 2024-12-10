@@ -17,21 +17,23 @@ bbn.predict(bbn.model=int.matrix, priors1 = Scenario1, figure=2)
 
 ggsave("./effects1.png")
 
-Scenario2<-read.csv('FILENAME.csv', header=T) # can run up to 6 scenarios at once
+Scenario2<-read.csv('treatment2.csv', header=T) # can run up to 6 scenarios at once
 
 bbn.predict(bbn.model=int.matrix, priors1 = Scenario1, priors2 = Scenario2, figure=2, boot_max = 100, font.size = 6)
 ## this will run two scenarios at once. The values will also have confidence intervals from bootstraps (100 isn't enough really, but it can take a lonmg time to do more
 ## font size in the figure can also be altered
-
+ggsave("./effects_2scenario.png")
 
 ########### Checking edge sensitivity 
 
 int.matrix[,1] ## gives exact names of variables to use
 
-bbn.sensitivity(bbn.model = int.matrix, boot_max = 100, 'Node1', 'Node2')
+bbn.sensitivity(bbn.model = int.matrix, boot_max = 100, 'Invertebrates', 'Resiliance')
 #### Node1 is the name of a key output node - spelt and capitalised identically to the priors/scenario value. 
 # One or multiple nodes can be used - suggested no more than 3 
 # boot_max=100 is realtively quick, but not accurate. ideally run with 10000 (can be good to let run overnight, as this will be slow)
+
+ggsave("./sensitivity.png")
 
 ############ Visualizing information flow
 
