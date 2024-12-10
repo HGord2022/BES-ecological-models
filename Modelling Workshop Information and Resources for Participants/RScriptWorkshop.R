@@ -64,5 +64,3 @@ bbn.network.diagram(bbn.network = vis.matrix, font.size = 0.7, arrow.size = 3, a
 
 
 
-
-
