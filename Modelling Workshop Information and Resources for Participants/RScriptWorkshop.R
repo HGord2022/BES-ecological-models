@@ -40,6 +40,8 @@ ggsave("./sensitivity.png")
 bbn.timeseries(bbn.model = int.matrix, priors1 = Scenario1, timesteps = 5, disturbance = 2)
 ### look at each node by timestep - not values do not correspond to the 'predict' function
 
+ggsave("./timeseries.png")
+
 bbn.visualise(bbn.model = int.matrix, priors1 = Scenario1, timesteps = 5, disturbance = 2, threshold=0.05, font.size=0.7, arrow.size=4)
 ### look at all nodes and interactions - dark = maximum increase, light = maximum decrease at this timestep
 
