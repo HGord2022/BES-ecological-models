@@ -11,9 +11,11 @@ Scenario1<-read.csv('treatment.csv', header=T) # read in files - should be an n 
 
 #### Running a prediction
 
-bbn.predict(bbn.model=int.matrix, priors1 = Scenario1, figure=2) 
+bbn.predict(bbn.model=int.matrix, priors1 = Scenario1, figure=2)
 # look at paper or R markdown for other arguments for this function 
 # or type ?bbn.predict into the R window
+
+ggsave("./effects1.png")
 
 Scenario2<-read.csv('FILENAME.csv', header=T) # can run up to 6 scenarios at once
 
