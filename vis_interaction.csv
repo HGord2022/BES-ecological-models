@@ -1,0 +1,6 @@
+﻿id,node.type,node.name,Algae,Zooplankton,Invertebrates,Minnows,Resiliance
+s1,1,Algae,,,,,
+s2,2,Zooplankton,-3,,,,
+s3,2,Invertebrates,,-2,,,3
+s4,3,Minnows,-1,-1,-2,,
+s5,4,Resiliance,,,,,
