@@ -49,15 +49,18 @@ bbn.visualise(bbn.model = int.matrix, priors1 = Scenario1, timesteps = 5, distur
 
 #### note, this needs a slightly different input file to the interaction matrix
 
-vis.matrix <-read.csv("FILENAME.csv", header=T)  # read in file
+vis.matrix <-read.csv("vis_interaction.csv", header=T)  # read in file
 
 head(vis.matrix) ## shows the strucure of the file
 
 bbn.network.diagram(bbn.network = vis.matrix, font.size = 0.7, arrow.size = 4, arrange = layout_on_sphere)
 bbn.network.diagram(bbn.network = vis.matrix, font.size = 0.7, arrow.size = 2, arrange = layout_on_grid)
 bbn.network.diagram(bbn.network = vis.matrix, font.size = 0.7, arrow.size = 2, arrange = layout.random)
-bbn.network.diagram(bbn.network = vis.matrix, font.size = 0.7, arrow.size = 2, arrange = layout.circle)
+bbn.network.diagram(bbn.network = vis.matrix, font.size = 0.7, arrow.size = 3, arrange = layout.circle)
 ## series of different layouts for the network diagram 
+
+
+
 
 
 
