@@ -1,0 +1,10 @@
+id,node.type,node.name,Grey squirrel,Seed-eating birds,Birds of prey,Domestic cats,Human presence,Disturbance,Seeds,Trees,Building development
+s01,1,Grey squirrel,,,1,,,,-4,1,
+s02,1,Seed-eating birds,,,1,,,,-4,1,
+s03,1,Birds of prey,-2,-1,,,,,,,
+s04,2,Domestic cats,-2,-3,-1,,,2,,,
+s05,2,Human presence,,,,3,,4,,,2
+s06,2,Disturbance,-1,-2,-2,-1,,,,,
+s07,1,Seeds,4,4,,,,,,2,
+s08,1,Trees,3,3,3,,,,4,,
+s09,2,Building development,,,,,,4,,-2,
